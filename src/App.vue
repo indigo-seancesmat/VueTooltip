@@ -10,7 +10,11 @@
       header="Hello Vue!"
       linkText="You keep me coming for ya"
       :showArrow="true"
-    />
+    >
+      <div
+        :style="{position: 'aboslute', top: '50px', left: '50%', transform: 'translate(-50%, -50%)', width: '200px', height: '100px'}"
+      >test div</div>
+    </Tooltip>
   </div>
 </template>
 
@@ -26,7 +30,8 @@ export default {
 </script>
 
 <style>
-html, body {
+html,
+body {
   font-size: 14px;
 }
 #app {

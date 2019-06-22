@@ -46,19 +46,27 @@ export default {
       type: String,
       default: "left"
     },
-    position: {
-      type: Object,
-      default: () => {
-        return {
-          x: "0px",
-          y: "0px"
-        };
-      }
-    },
+    // position: {
+    //   type: Object,
+    //   default: () => {
+    //     return {
+    //       x: "0px",
+    //       y: "0px"
+    //     };
+    //   }
+    // },
     showArrow: {
       type: Boolean,
       default: true
     }
+  },
+  data() {
+    return {
+      position: {
+        x: "0px",
+        y: "0px"
+      }
+    };
   },
   computed: {
     positioning() {
@@ -107,7 +115,10 @@ export default {
     }
   },
   mounted() {
-    this.$refs.tooltipSlot    
+    console.log(this.$refs)
+    // var slotElement = this.$refs.tooltipSlot;
+    // var width = slotElement.offsetWidth;
+    // var height = slotElement.offsetHeight;
   }
 };
 </script>
