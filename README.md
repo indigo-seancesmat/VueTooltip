@@ -1,2 +1,0 @@
-# VueTooltip
-Created with CodeSandbox
